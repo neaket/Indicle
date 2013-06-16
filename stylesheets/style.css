@@ -1,0 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Coda+Caption:800);
+
+body {
+    background-color: #333;
+}
+.center {
+    width: 410px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -100px 0 0 -205px;
+        color: #fff;
+    background-color: #22d;  
+    text-align: center;
+}
+h1 {
+
+    font-size: 100px;
+    font-family: 'Coda Caption', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 45px;
+}
