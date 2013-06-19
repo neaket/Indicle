@@ -1,37 +1,142 @@
 @import url(http://fonts.googleapis.com/css?family=Coda+Caption:800);
 
-
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
 
 body {
-    background-color: #333;
+    background-color: #fff;
 }
 h1 {
 
-    font-size: 100px;
-    line-height: 140px;
+    font-size: 40px;
+    line-height: 90px;
     font-family: 'Coda Caption', sans-serif;
-    position: relative;
-    margin: 5%;
     padding: 0;
     color: #fff;
-    width: 90%;
     text-align: center;
     background-color: #33f;
-    border-radius: .2em;
+    width: 40%;
+    display: inline-block;
+    float: left;
 }
 h2 {
     text-align: center;
-    color: #fff;
 }
 
+ul {
+    width: 60%;
+    position: absolute;
+    left: 40%;
+}
+
+li {
+    background: #333;
+    width: 50%;
+    position: absolute;
+    line-height: 45px;
+    text-align: center;
+    font-size: 36px;
+    /*border: 3px solid orange;*/
+}
+
+li.two {
+    left: 50%;
+}
+
+li.three {
+    top: 45px;
+}
+
+li.four {
+    left: 50%;
+    top: 45px;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+
 @media (max-width: 480px) {
-    h1 {
+/*    h1 {
         font-size: 60px;
         line-height: 80px;
+    }*/
+    h1 {
+        line-height: 80px;
+        float:none;
+        width: 100%;
+    }
+
+    ul {
+        width: 100%;
+        left: 0;
+    }
+
+    li {
+        width: 25%;
+        float: none;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+
+    li.two {
+        left: 25%;
+    }
+
+    li.three {
+        top: 0;
+        left: 50%;
+    }
+
+    li.four {
+        top: 0;
+        left: 75%;
     }
 }
 
+@media (min-width: 800px) {
+/*    h1 {
+        font-size: 60px;
+        line-height: 80px;
+    }*/
+    h1 {
+        line-height: 60px;
+        float:none;
+        width: 25%;
+    }
+
+    ul {
+        width: 75%;
+        left: 25%;
+        top: 0;
+    }
+
+    li {
+        width: 25%;
+        font-size: 24px;
+        line-height: 60px;
+    }
+
+
+    li.two {
+        left: 25%;
+    }
+
+    li.three {
+        top: 0;
+        left: 50%;
+    }
+
+    li.four {
+        top: 0;
+        left: 75%;
+    }
+}
+/*
 @media (min-width: 800px) {
     h1 {
         font-size: 165px;
@@ -44,4 +149,4 @@ h2 {
         font-size: 240px;
         line-height: 280px;
     }
-}
+}*/
